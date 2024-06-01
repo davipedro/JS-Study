@@ -1,0 +1,92 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Roboto;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: rgb(151, 241, 151);
+}
+
+.container {
+    background-color: #fff;
+    height: 260px;
+    width: 400px;
+    border-radius: 10px;
+    padding: 20px;
+    transition: 0.2s;
+}
+
+#qr-header {
+    text-align: center;
+}
+
+#qr-header h1 {
+    font-size: 1.8rem;
+    font-weight: 900;
+    margin-bottom: 10px;
+}
+
+#qr-header p {
+    color: #444;
+    font-size: 0.9rem;
+}
+
+#qr-form {
+    margin: 20px 15px;
+}
+
+#qr-form input,
+#qr-form button {
+    width: 100%;
+    height: 55px;
+    border: none;
+    border-radius: 5px;
+    font-size: 0.9rem;
+}
+
+#qr-form input {
+    border: 1px solid #777;
+    padding: 10px 15px;
+}
+
+#btn-submit {
+    background-color: #32993b;
+    color: #fff;
+    font-size: 1.2rem;
+    margin-top: 20px;
+    cursor: pointer;
+    transition: 0.1s;
+}
+
+#btn-submit:hover {
+    background-color: #1d5e22;
+}
+
+.container.active {
+    height: 500px;
+}
+
+#qr-code {
+    opacity: 0;
+    display: flex;
+    border: 1px solid #ccc;
+    padding: 30px 0px;
+    margin: 20px 15px;
+    display: flex;
+    justify-content: center;
+    border-radius: 5px;
+}
+
+#qr-code img{
+    width: 150px;
+}
+
+.container.active #qr-code {
+    opacity: 1;
+}
